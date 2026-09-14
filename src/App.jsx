@@ -11,7 +11,7 @@ export default function App() {
     logo: "https://i.postimg.cc/MZjF14p9/751447743-122101589271404328-3490054746355691907-n.jpg", 
     hero: "https://i.postimg.cc/PJkzWS6q/unnamed.webp", 
     alimentos: "https://i.postimg.cc/PJkzWS6q/unnamed.webp",
-    accesorios: "https://i.postimg.cc/PJ4ZmTpM/unnamed-(1).webp",
+    accesorios: "[![unnamed-(1).webp](https://i.postimg.cc/PJ4ZmTpM/unnamed-(1).webp)](https://postimg.cc/V0JdwyFS)",
     higiene: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
   };
 
