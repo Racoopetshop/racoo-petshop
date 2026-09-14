@@ -16,7 +16,7 @@ export default function App() {
 
   const t = {
     es: {
-      navInicio: "Inicio",
+      navInicio: "Iniciao",
       navCatalogo: "Catálogo",
       navDelicias: "Delicias Bar",
       navContacto: "Contacto",
