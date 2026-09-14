@@ -161,4 +161,51 @@ export default function App() {
                   <p className="text-lg text-[#4A5D45]">{t.heroDesc}</p>
                   <div className="flex gap-4 pt-2">
                     <button onClick={() => setActiveTab('catalogo')} className="px-7 py-4 rounded-xl bg-[#C85A32] text-white font-bold">{t.btnVerCatalogo}</button>
-                    <button onClick={() => setActiveTab('delicias')} className="px-6 py-4 rounded-xl
+                    <button onClick={() => setActiveTab('delicias')} className="px-6 py-4 rounded-xl bg-[#FAF0EB] text-[#C85A32] border border-[#E7BFB0] font-bold">{t.btnExplorarDelicias}</button>
+                  </div>
+                </div>
+                <div className="lg:col-span-5">
+                  <img src={IMAGENES.hero} alt="Mascota Racoo" className="w-full rounded-2xl border border-[#E7DFD5] shadow-xl" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 bg-[#EAE3D9]/30 border-y border-[#E7DFD5]">
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="text-center space-y-2 mb-12">
+                <h2 className="text-3xl font-extrabold text-[#2B382A]">{t.reviewsTitle}</h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {RESENAS.map((r, i) => (
+                  <div key={i} className="bg-white p-6 rounded-2xl border border-[#E7DFD5]">
+                    <p className="text-sm text-[#4A5D45] italic">"{r.comentario}"</p>
+                    <p className="font-bold text-xs text-[#2B382A] mt-4">{r.nombre}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </main>
+      )}
+
+      {activeTab === 'catalogo' && (
+        <section className="max-w-7xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-extrabold text-[#2B382A] text-center mb-8">{t.catTitle}</h1>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl border border-[#E7DFD5] overflow-hidden"><img src={IMAGENES.alimentos} className="h-48 w-full object-cover" /><div className="p-6"><h3 className="font-bold text-xl">{t.cat1Title}</h3></div></div>
+            <div className="bg-white rounded-2xl border border-[#E7DFD5] overflow-hidden"><img src={IMAGENES.accesorios} className="h-48 w-full object-cover" /><div className="p-6"><h3 className="font-bold text-xl">{t.cat2Title}</h3></div></div>
+            <div className="bg-white rounded-2xl border border-[#E7DFD5] overflow-hidden"><img src={IMAGENES.higiene} className="h-48 w-full object-cover" /><div className="p-6"><h3 className="font-bold text-xl">{t.cat3Title}</h3></div></div>
+          </div>
+        </section>
+      )}
+
+      {activeTab === 'delicias' && (
+        <section className="max-w-7xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-extrabold text-[#2B382A] text-center mb-8">{t.deliciasTitle}</h1>
+          <p className="text-center text-[#4A5D45] mb-8">{t.deliciasDesc}</p>
+        </section>
+      )}
+    </div>
+  );
+}
