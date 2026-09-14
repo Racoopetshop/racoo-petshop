@@ -8,35 +8,34 @@ export default function App() {
   // 🖼️ SUSTITUYE AQUÍ TUS ENLACES DE IMÁGENES REALES
   const IMAGENES = {
     // Si tienes el link de tu logo, pégalo aquí. Si no, usa el avatar por defecto.
-    logo: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=150&q=80", 
+    logo: "https://i.postimg.cc/MZjF14p9/751447743-122101589271404328-3490054746355691907-n.jpg", 
     
     // Foto principal del Hero (Banner de inicio)
     hero: "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=900&q=85", 
     
     // Fotos del catálogo
-    alimentos: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80",
-    accesorios: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=600&q=80",
+    alimentos: "https://i.postimg.cc/PJkzWS6q/unnamed.webp",
+    accesorios: "https://i.postimg.cc/PJ4ZmTpM/unnamed-(1).webp",
     higiene: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
   };
 
   // ⭐️ RESEÑAS DE CLIENTES REALES (Puedes editar los textos y nombres)
   const RESENAS = [
     {
-      nombre: "Valeria M.",
-      mascota: "Dueña de Bruno 🐶",
-      comentario: "Excelente atención y los premios del Delicias Bar le encantan a mi perrito. Sin duda la mejor petshop de Bucerías.",
+      nombre: "Angel",
+      comentario: "Super cute store and very friendly!! Will be back for sure hopefully with our dogs next time :) food, treats and pet accessories",
       estrellas: 5
     },
     {
-      nombre: "Carlos R.",
-      mascota: "Dueño de Michi 🐱",
-      comentario: "Encontré alimento holístico de alta calidad que no conseguía en otros lados. El servicio por WhatsApp es super rápido.",
+      nombre: "WmWMARIANOWmW Delgado",
+      comentario: "Me encantó!
+La atención es increíble y la ubicación es súper accesible así como los precios!
+Lo mejor es que tienen descuentos a locales! 100% recomendado!!!",
       estrellas: 5
     },
     {
-      nombre: "Sarah Jenkins",
-      mascota: "Dueña de Luna 🐕",
-      comentario: "Super Pet Friendly! Love coming here during our walks in the Golden Zone. The natural snacks are top quality.",
+      nombre: "Eric Zink",
+      comentario: "What an amazing addition to Bucerias. Owners are super pet friendly and knowledgeable. Great assortment of treats and necessities",
       estrellas: 5
     }
   ];
