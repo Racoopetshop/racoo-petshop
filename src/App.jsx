@@ -6,13 +6,13 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lang, setLang] = useState('es'); // 'es' para Español, 'en' para Inglés
 
-  // 🖼️ ENLACES DE IMÁGENES (Sustituye con tus links de Drive o ImgBB)
+  // 🖼️ ENLACES DE IMÁGENES
   const IMAGENES = {
-    logo: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn1O6a-PGXmGZ-Pt--k-YDEvdgXoypkDPgB14bNg9LWiMWgRA8j-i0ShFr4SpQRu5a-sKFltLPCo7rXVIAxHrIDp3LwMcYkQAmgfQmR1uISD2h4-OCNRbJnIANoyjNY5DpSg28V7iWh3vM=s1360-w1360-h1020-rw", 
+    logo: "https://i.postimg.cc/MZjF14p9/751447743-122101589271404328-3490054746355691907-n.jpg", 
     hero: "https://i.postimg.cc/PJkzWS6q/unnamed.webp", 
     alimentos: "https://i.postimg.cc/PJkzWS6q/unnamed.webp",
     accesorios: "https://i.postimg.cc/PJ4ZmTpM/unnamed-(1).webp",
-    higiene: "https://i.postimg.cc/PJ4ZmTpM/unnamed-(1).webp"
+    higiene: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80"
   };
 
   // 🌐 DICCIONARIO DE TEXTOS MULTI-IDIOMA
@@ -45,7 +45,7 @@ export default function App() {
       btnOrder: "Pedir 💬",
       catTitle: "Catálogo de Productos",
       catSubtitle: "Explora nuestras categorías de alimentos, accesorios y cuidado general.",
-      cat1Title: "Alimentos Premium",
+      cat1Title: "Alimentos Premium & Holísticos",
       cat1Desc: "Croquetas y alimento húmedo sin granos para todas las etapas de vida.",
       cat2Title: "Accesorios & Juguetes",
       cat2Desc: "Correas, pecheras ergonómicas y juguetes interactivos.",
@@ -93,16 +93,22 @@ export default function App() {
     }
   }[lang];
 
-  // ⭐️ RESEÑAS CON TEXTO SEGÚN IDIOMA
+  // ⭐️ RESEÑAS CON SINTAXIS CORREGIDA (Sin saltos de línea con comillas simples)
   const RESENAS = [
     {
-      nombre: "Eric Zink",
-      comentario: lang === 'es' ? "Excelente atención y los premios del Delicias Bar le encantan a mi perrito. La mejor petshop de Bucerías." : "What an amazing addition to Bucerias. Owners are super pet friendly and knowledgeable. Great assortment of treats and necessities.": 5
+      nombre: "WmWMARIANOWmW Delgado",
+      mascota: lang === 'es' ? "Cliente en Google Maps" : "Google Maps Reviewer",
+      comentario: lang === 'es' 
+        ? "Me encantó! La atención es increíble y la ubicación es súper accesible así como los precios! Lo mejor es que tienen descuentos a locales! 100% recomendado!!!" 
+        : "I loved it! The attention is incredible and the location is super accessible as well as the prices! The best thing is that they have discounts for locals! 100% recommended!!!",
+      estrellas: 5
     },
     {
-      nombre: "Carlos R.",
-      mascota: lang === 'es' ? "Dueño de Michi 🐱" : "Michi's Owner 🐱",
-      comentario: lang === 'es' ? "Encontré alimento holístico de alta calidad que no conseguía en otros lados. El servicio por WhatsApp es super rápido." : "Found high-quality holistic food that I couldn't find anywhere else. WhatsApp service is super fast.",
+      nombre: "Valeria M.",
+      mascota: lang === 'es' ? "Dueña de Bruno 🐶" : "Bruno's Owner 🐶",
+      comentario: lang === 'es' 
+        ? "Excelente atención y los premios del Delicias Bar le encantan a mi perrito. La mejor petshop de Bucerías." 
+        : "Great service and my dog loves the treats from the Delicias Bar. The best pet shop in Bucerias.",
       estrellas: 5
     },
     {
